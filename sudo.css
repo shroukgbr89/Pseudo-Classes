@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* empty >> Selects every <p> element that has no children*/
+
+a{
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+/* if it is visited */
+a:visited{
+    color: green;
+}
+/* if it is not visited */
+a:link{
+    color: red;
+}
+/* Active >> تضغط مطول على العنصر هيحصل اى  */
+a:active{
+    background-color: aqua;
+}
+
+
+
+/* لما اضغط عليه */
+input:focus{
+    background-color: rgb(35, 211, 93);
+}
+.dis:disabled{
+    background-color: rgba(251, 129, 15, 0.84);
+}
+.w:required{
+    font-size: x-large;
+    background-color: aqua;
+}
+
+.email:invalid{
+    background-color: rgb(214, 16, 16);
+}
+.email:valid{
+    background-color: rgb(53, 164, 16);
+}
+.check:checked{
+    position: absolute;
+    right: 0;
+}
+
+
+section p:first-child{
+    color: rgb(255, 0, 102);
+    font-size: 25px;
+}
+section p:last-child{
+    color: rgb(0, 51, 255);
+    font-size: 20px;
+}
+section p:nth-child(3){
+    color: rgb(68, 201, 68);
+    font-size: 40px;
+}
+section p:nth-last-of-type(4){
+    color: rgb(239, 110, 17);
+    font-size: 30px;
+}
+
+/* nth(number , keyword , formula) */
+/* nth-of-type >> اللى من نوع ديف */
+span div:nth-child(5){
+    color: red;
+    font-weight: bold;
+}
+span p:nth-last-of-type(2){
+    font: bolder;
+    color: green;
+}
+
+span div:nth-of-type(odd) {
+    font-weight: bolder;
+    color: rgb(0, 0, 128);
+}
